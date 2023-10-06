@@ -25,9 +25,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Web.Services;
+using static System.Net.Mime.MediaTypeNames;
+using System.Web.Services.Description;
 
 namespace SensorMonitoringSystem
 {
+
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class SensorMonitoringSystemService : ISensorMonitoringSystemService
     {
@@ -1031,6 +1034,4 @@ namespace SensorMonitoringSystem
                 return result;
         }
     }
-
-
 }
