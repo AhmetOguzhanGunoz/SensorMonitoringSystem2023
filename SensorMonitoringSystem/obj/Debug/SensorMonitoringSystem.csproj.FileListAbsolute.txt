@@ -1,0 +1,34 @@
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll.config
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\SensorMonitoringSystem.pdb
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\EntityFramework.dll
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\EntityFramework.SqlServer.dll
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\EntityFramework.xml
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\bin\EntityFramework.SqlServer.xml
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csprojResolveAssemblyReference.cache
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.dll
+D:\SERVİS DENEMELER\SensorMonitoringSystem\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.pdb
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll.config
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.pdb
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.dll
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.SqlServer.dll
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.xml
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.SqlServer.xml
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.AssemblyReference.cache
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.CoreCompileInputs.cache
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.CopyComplete
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.dll
+D:\P\SensorMonitoringSystem-master\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.pdb
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll.config
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.dll
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\SensorMonitoringSystem.pdb
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.dll
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.SqlServer.dll
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.xml
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\bin\EntityFramework.SqlServer.xml
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.AssemblyReference.cache
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.CoreCompileInputs.cache
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.csproj.CopyComplete
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.dll
+D:\P\SensorMonitoringSystem2023\SensorMonitoringSystem-master\SensorMonitoringSystem\obj\Debug\SensorMonitoringSystem.pdb

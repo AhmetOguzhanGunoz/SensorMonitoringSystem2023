@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SensorMonitoringSystemModelStoreContainer" CdmEntityContainer="SensorMonitoringSystemEntities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.CompaniesEntity">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sensors">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.SensorsEntity">
+        <MappingFragment StoreEntitySet="Sensors">
+          <ScalarProperty Name="IsSpecificSensor" ColumnName="IsSpecificSensor" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SensorDescription" ColumnName="SensorDescription" />
+          <ScalarProperty Name="SensorAddress" ColumnName="SensorAddress" />
+          <ScalarProperty Name="GraphicalMinValue" ColumnName="GraphicalMinValue" />
+          <ScalarProperty Name="GraphicalMaxValue" ColumnName="GraphicalMaxValue" />
+          <ScalarProperty Name="LowestCriticalValue" ColumnName="LowestCriticalValue" />
+          <ScalarProperty Name="HighestCriticalValue" ColumnName="HighestCriticalValue" />
+          <ScalarProperty Name="SensorUnit" ColumnName="SensorUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SensorsDatas">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.SensorsDatasEntity">
+        <MappingFragment StoreEntitySet="SensorsDatas">
+          <ScalarProperty Name="DataID" ColumnName="DataID" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="ReadValue" ColumnName="ReadValue" />
+          <ScalarProperty Name="ReadValueTime" ColumnName="ReadValueTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.UsersEntity">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordKey" ColumnName="PasswordKey" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActivated" ColumnName="IsActivated" />
+          <ScalarProperty Name="RegistrationCode" ColumnName="RegistrationCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersDetails">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.UsersDetailsEntity">
+        <MappingFragment StoreEntitySet="UsersDetails">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="DetailID" ColumnName="DetailID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="SensorMonitoringSystemModel.Store.DatasBetweenDates" FunctionImportName="DatasBetweenDates">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SensorMonitoringSystemModel.DatasBetweenDates_Result">
+          <ScalarProperty Name="DataID" ColumnName="DataID" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="ReadValue" ColumnName="ReadValue" />
+          <ScalarProperty Name="ReadValueTime" ColumnName="ReadValueTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.CitiesEntity">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="DistrictRelationID" ColumnName="DistrictRelationID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.CountriesEntity">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="CountryPhoneCode" ColumnName="CountryPhoneCode" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.DistrictsEntity">
+        <MappingFragment StoreEntitySet="Districts">
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="DistrictRelationID" ColumnName="DistrictRelationID" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DirtyWords">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.DirtyWordsEntity">
+        <MappingFragment StoreEntitySet="DirtyWords">
+          <ScalarProperty Name="DirtyWord" ColumnName="DirtyWord" />
+          <ScalarProperty Name="DirtyWordID" ColumnName="DirtyWordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="UserLogin" FunctionName="SensorMonitoringSystemModel.Store.UserLogin" />
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.UserTypesEntity">
+        <MappingFragment StoreEntitySet="UserTypes">
+          <ScalarProperty Name="UserTypeName" ColumnName="UserTypeName" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DataRegistration" FunctionName="SensorMonitoringSystemModel.Store.DataRegistration" />
+    <FunctionImportMapping FunctionImportName="SensorRegistration" FunctionName="SensorMonitoringSystemModel.Store.SensorRegistration" />
+    <EntitySetMapping Name="Companies_Audit">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.Companies_AuditEntity">
+        <MappingFragment StoreEntitySet="Companies_Audit">
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionFrom" ColumnName="ActionFrom" />
+          <ScalarProperty Name="OldCompanyName" ColumnName="OldCompanyName" />
+          <ScalarProperty Name="OldCompanyID" ColumnName="OldCompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="AuditCompanyID" ColumnName="AuditCompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sensors_Audit">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.Sensors_AuditEntity">
+        <MappingFragment StoreEntitySet="Sensors_Audit">
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionFrom" ColumnName="ActionFrom" />
+          <ScalarProperty Name="OldIsSpecificSensor" ColumnName="OldIsSpecificSensor" />
+          <ScalarProperty Name="OldSensorUnit" ColumnName="OldSensorUnit" />
+          <ScalarProperty Name="OldHighestCriticalValue" ColumnName="OldHighestCriticalValue" />
+          <ScalarProperty Name="OldLowestCriticalValue" ColumnName="OldLowestCriticalValue" />
+          <ScalarProperty Name="OldGraphicalMaxValue" ColumnName="OldGraphicalMaxValue" />
+          <ScalarProperty Name="OldGraphicalMinValue" ColumnName="OldGraphicalMinValue" />
+          <ScalarProperty Name="OldSensorAddress" ColumnName="OldSensorAddress" />
+          <ScalarProperty Name="OldSensorDescription" ColumnName="OldSensorDescription" />
+          <ScalarProperty Name="OldCompanyID" ColumnName="OldCompanyID" />
+          <ScalarProperty Name="OldAuditSensorID" ColumnName="OldAuditSensorID" />
+          <ScalarProperty Name="IsSpecificSensor" ColumnName="IsSpecificSensor" />
+          <ScalarProperty Name="SensorUnit" ColumnName="SensorUnit" />
+          <ScalarProperty Name="HighestCriticalValue" ColumnName="HighestCriticalValue" />
+          <ScalarProperty Name="LowestCriticalValue" ColumnName="LowestCriticalValue" />
+          <ScalarProperty Name="GraphicalMaxValue" ColumnName="GraphicalMaxValue" />
+          <ScalarProperty Name="GraphicalMinValue" ColumnName="GraphicalMinValue" />
+          <ScalarProperty Name="SensorAddress" ColumnName="SensorAddress" />
+          <ScalarProperty Name="SensorDescription" ColumnName="SensorDescription" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="AuditSensorID" ColumnName="AuditSensorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_Audit">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.Users_AuditEntity">
+        <MappingFragment StoreEntitySet="Users_Audit">
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionFrom" ColumnName="ActionFrom" />
+          <ScalarProperty Name="OldUserType" ColumnName="OldUserType" />
+          <ScalarProperty Name="OldRegistrationCode" ColumnName="OldRegistrationCode" />
+          <ScalarProperty Name="OldIsApproved" ColumnName="OldIsApproved" />
+          <ScalarProperty Name="OldIsActivated" ColumnName="OldIsActivated" />
+          <ScalarProperty Name="OldPasswordKey" ColumnName="OldPasswordKey" />
+          <ScalarProperty Name="OldPassword" ColumnName="OldPassword" />
+          <ScalarProperty Name="OldUsername" ColumnName="OldUsername" />
+          <ScalarProperty Name="OldSurname" ColumnName="OldSurname" />
+          <ScalarProperty Name="OldName" ColumnName="OldName" />
+          <ScalarProperty Name="OldCompanyID" ColumnName="OldCompanyID" />
+          <ScalarProperty Name="OldUserID" ColumnName="OldUserID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="RegistrationCode" ColumnName="RegistrationCode" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsActivated" ColumnName="IsActivated" />
+          <ScalarProperty Name="PasswordKey" ColumnName="PasswordKey" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="AuditUserID" ColumnName="AuditUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersDetails_Audit">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.UsersDetails_AuditEntity">
+        <MappingFragment StoreEntitySet="UsersDetails_Audit">
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionFrom" ColumnName="ActionFrom" />
+          <ScalarProperty Name="OldDateOfBirth" ColumnName="OldDateOfBirth" />
+          <ScalarProperty Name="OldAdress" ColumnName="OldAdress" />
+          <ScalarProperty Name="OldDistrict" ColumnName="OldDistrict" />
+          <ScalarProperty Name="OldCity" ColumnName="OldCity" />
+          <ScalarProperty Name="OldCountry" ColumnName="OldCountry" />
+          <ScalarProperty Name="OldEmail" ColumnName="OldEmail" />
+          <ScalarProperty Name="OldPhoneNumber" ColumnName="OldPhoneNumber" />
+          <ScalarProperty Name="OldUserID" ColumnName="OldUserID" />
+          <ScalarProperty Name="OldDetailID" ColumnName="OldDetailID" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DetailID" ColumnName="DetailID" />
+          <ScalarProperty Name="AuditDetailID" ColumnName="AuditDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SensorsDatas_Audit">
+      <EntityTypeMapping TypeName="SensorMonitoringSystemModel.SensorsDatas_AuditEntity">
+        <MappingFragment StoreEntitySet="SensorsDatas_Audit">
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionFrom" ColumnName="ActionFrom" />
+          <ScalarProperty Name="OldReadValueTime" ColumnName="OldReadValueTime" />
+          <ScalarProperty Name="OldReadValue" ColumnName="OldReadValue" />
+          <ScalarProperty Name="OldSensorID" ColumnName="OldSensorID" />
+          <ScalarProperty Name="OldDataID" ColumnName="OldDataID" />
+          <ScalarProperty Name="ReadValueTime" ColumnName="ReadValueTime" />
+          <ScalarProperty Name="ReadValue" ColumnName="ReadValue" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="DataID" ColumnName="DataID" />
+          <ScalarProperty Name="AuditDataID" ColumnName="AuditDataID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CriticValueChecker" FunctionName="SensorMonitoringSystemModel.Store.CriticValueChecker">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SensorMonitoringSystemModel.CriticValueChecker_Result">
+          <ScalarProperty Name="AuditDataID" ColumnName="AuditDataID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="SensorDescription" ColumnName="SensorDescription" />
+          <ScalarProperty Name="ReadValue" ColumnName="ReadValue" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

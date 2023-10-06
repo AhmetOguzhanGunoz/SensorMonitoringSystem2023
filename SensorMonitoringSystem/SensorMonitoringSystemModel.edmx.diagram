@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c43e715afe6401696e16d2573c5d6e7" Name="Diagram1">
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.CompaniesEntity" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.SensorsEntity" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.SensorsDatasEntity" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.UsersEntity" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.UsersDetailsEntity" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="SensorMonitoringSystemModel.FK__Sensors__Company__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="SensorMonitoringSystemModel.FK__Users__CompanyID__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="SensorMonitoringSystemModel.FK__SensorsDa__Senso__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="SensorMonitoringSystemModel.FK__UsersDeta__UserI__182C9B23" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.CitiesEntity" Width="1.5" PointX="9.625" PointY="0.875" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.CountriesEntity" Width="1.5" PointX="7.375" PointY="1" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.DistrictsEntity" Width="1.5" PointX="7.375" PointY="3.75" />
+        <AssociationConnector Association="SensorMonitoringSystemModel.FK__Cities__CountryI__02FC7413" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.DirtyWordsEntity" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.UserTypesEntity" Width="1.5" PointX="9.75" PointY="6.375" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.Companies_AuditEntity" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.Sensors_AuditEntity" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.Users_AuditEntity" Width="1.5" PointX="6.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.UsersDetails_AuditEntity" Width="1.5" PointX="9.75" PointY="8.75" />
+        <EntityTypeShape EntityType="SensorMonitoringSystemModel.SensorsDatas_AuditEntity" Width="1.5" PointX="12.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

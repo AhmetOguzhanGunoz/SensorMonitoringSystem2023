@@ -1,0 +1,273 @@
+﻿body 
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    background: WhiteSmoke;
+    font-size: 1em;
+    position: fixed;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#banner 
+{
+    width:70%;
+    height:20vh;
+    margin:auto;
+    background:linear-gradient(to right, darksalmon, coral, blanchedalmond);
+    border:0.25em solid #bfbfbf;
+    border-bottom-right-radius:50%;
+    border-top-right-radius:50%;
+    display:flex;
+}
+
+#bannerpart1
+{
+    width:25%;
+    height:20vh;
+}
+
+#bannerpart1 img
+{
+    width:20vw;
+    height:20vh;
+    display:block;   
+}
+
+#bannerpart2
+{
+    width:75%;
+    height:20vh;
+    text-align:center;
+}
+
+#bannerpart2 h3
+{
+    font-family:Georgia;
+    text-transform:uppercase;
+    color:brown;
+    font-size: calc(0.75vw + 1.5vh);
+    width:30vw;
+    height:1vh;
+    position:relative;
+    top:2vh;
+    left:6vw;
+}
+
+#bannerpart2 p
+{
+    font-family:'Times New Roman';
+    text-transform:lowercase;
+    font-style:oblique;
+    color:bisque;
+    font-size: calc(0.5vw + 1vh);
+    width:30vw;
+    height:1vh;
+    position:relative;
+    top:6vh;
+    left:6vw;
+}
+
+#content 
+{
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    background: snow;
+    text-align: center;
+    font-family: Georgia;
+    font-size: calc(0.8vw + 0.70vh);
+    color: brown;
+    overflow-y: auto;
+    display: block;
+}
+
+#contentmiddle
+{
+    width:50%;
+    height:50%;
+    margin:auto;
+    position:relative;
+    top:25%;
+    display:block;
+    font-size: calc(0.7vw + 0.5vh);
+}
+
+#signuparea 
+{
+    width: 100%;
+    font-size: calc(0.6vw + 0.50vh);
+}
+
+.inputclass
+{
+    border:0.2em solid #bfbfbf;
+    background-color:blanchedalmond;
+    color:brown;
+    width:calc(21vw - 11vh);
+    height:calc(2vw - 1vh);
+}
+
+.inputclass:focus
+{
+    border:0.25em ridge #bfbfbf;
+    border-radius:0 0.7em 0 0.7em;
+    outline-style:none;
+}
+
+.buttonclass
+{
+    background-color:rgb(80, 80, 80);
+    color:white;    
+    font-size: calc(0.65vw + 0.65vh);
+    outline-style:none;
+}
+
+.buttonclass:focus
+{
+    border:0.25em ridge #bfbfbf;
+    border-radius:0 0.7em 0 0.7em;
+}
+
+#footer 
+{
+    width: 99vw;
+    height: 6vh;
+    background: #bfbfbf;
+    text-align: center;
+    margin-top: 1.75%;
+    border-right: 500px solid #bfbfbf;
+}
+
+#footer p
+{
+    font-size: calc(0.50vw + 0.50vh);
+    position:relative;
+    top:calc(2vh - 0.6vw);
+
+}
+
+.contentmargin
+{
+    margin-top:2%;
+}
+
+#Checkarea
+{
+    position:relative;
+    top:10%;
+    font-size: calc(0.7vw + 0.5vh);
+}
+
+#Infoarea
+{
+    position:relative;
+    top:15%;
+    font-size: calc(0.7vw + 0.5vh);
+}
+
+#Checkarea table
+{
+    position:relative;
+    left:6%;
+}
+
+#Infoarea table
+{
+    position:relative;
+    left:6.5%;
+}
+
+.Profileareaclass
+{
+    position:relative;
+    top:5%;
+    left:5%;
+    font-size: calc(0.7vw + 0.5vh);
+    width:90%;
+    height:20%;
+}
+
+
+#Showarea 
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*#Showarea table
+{
+    position:relative;
+    left:15%;
+}*/
+
+#chart_div
+{
+    border:5px dotted #bfbfbf;
+    height:50vh;
+}
+
+#loading {
+    background: url('wait.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+#UsersArea 
+{
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+    background-color: blanchedalmond;
+    color: brown;
+    float: left;
+}
+
+#UsersTypeArea {
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+    background-color: blanchedalmond;
+    color: brown;
+    float: right;
+}
+
+#SelectionArea 
+{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+#UserLabelArea 
+{
+    font-size: calc(0.7vw + 0.5vh);
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+#DataSelectionArea 
+{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#DataChangingArea 
+{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

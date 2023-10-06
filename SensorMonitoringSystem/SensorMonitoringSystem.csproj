@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFE87F19-A14C-4114-A70E-5FA72E890381}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SensorMonitoringSystem</RootNamespace>
+    <AssemblyName>SensorMonitoringSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.jpg" />
+    <Content Include="MailTemplate.html" />
+    <Content Include="SensorMonitoringSystemModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SensorMonitoringSystemModel.edmx</DependentUpon>
+      <LastGenOutput>SensorMonitoringSystemModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SensorMonitoringSystemModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SensorMonitoringSystemModel.edmx</DependentUpon>
+      <LastGenOutput>SensorMonitoringSystemModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SensorMonitoringSystemService.svc" />
+    <Content Include="WarningTemplate.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CitiesEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompaniesEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Companies_AuditEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CountriesEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CriticValueChecker_Result.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatasBetweenDates_Result.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DirtyWordsEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictsEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ISensorMonitoringSystemService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SensorMonitoringSystemModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SensorMonitoringSystemModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SensorMonitoringSystemModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SensorMonitoringSystemModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SensorMonitoringSystemModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SensorMonitoringSystemService.svc.cs">
+      <DependentUpon>SensorMonitoringSystemService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="SensorsDatasEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SensorsDatas_AuditEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SensorsEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sensors_AuditEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDetailsEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDetails_AuditEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsersEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users_AuditEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserTypesEntity.cs">
+      <DependentUpon>SensorMonitoringSystemModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <EntityDeploy Include="SensorMonitoringSystemModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SensorMonitoringSystemModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="SensorMonitoringSystemModel.edmx.diagram">
+      <DependentUpon>SensorMonitoringSystemModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63420</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63420/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
